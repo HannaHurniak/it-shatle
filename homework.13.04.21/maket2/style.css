@@ -1,0 +1,57 @@
+.wrapper{
+    padding: 20px;
+}
+body{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    width: 517px;
+}
+.header{
+    background: #FFC700;
+    height: 81px;
+    margin-bottom: 20px;
+}
+.header > p{
+    color: #000000;
+    padding: 5px 8px 4px 9px;
+    
+}
+.situation{
+    position: relative;
+    background: #00FF0A;
+}
+ 
+.img > img{
+    position: absolute;
+    width: 477px;
+    height: 226px;
+}
+
+.info > p{
+    display: block;
+    font-size: 18px;
+    line-height: 29px;
+    color: #3F3131;
+    padding-left: 28px;
+    padding-bottom: 24px;
+    width: 400px;
+}
+.footer{
+    margin-top: 20px;
+    display: flex;
+}
+.ad{
+    height: 239px;
+}
+.ad__info{
+    background: #634830;
+    color: #FFFFFF; 
+}
+.ad__info > p{
+    display: block;
+    padding: 30px 6px 50px 6px;
+}
+
