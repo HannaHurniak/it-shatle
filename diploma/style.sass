@@ -1,2 +1,133 @@
+*
+    margin: 0
+    padding: 0
 body
     matgin: 0 auto 
+%font-sans    
+    font-family: Source Sans Pro
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    color: #333333
+%font-poppins
+    font-family: Poppins
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 64px
+    color: #333333
+%button
+    width: 170px
+    height: 48px
+    border-radius: 24px
+%flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+header
+    position: relative
+    overflow: hidden
+    width: 1440px
+    height: 768px
+    background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+button
+    @extend %button
+    border: none
+    cursor: pointer
+    &:hover
+        background-color: #fff
+        color: #1e20ad
+        transition: 2s
+        box-shadow: inset rgba(0,0,0,.2) 0 -2px 5px, inset rgba(252,255,255,.3) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+h2
+    @extend %font-poppins
+.wrapper
+    margin-left: auto
+    margin-right: auto
+    width: 1170px
+.header
+    @extend %flex
+    @extend %font-sans
+    color: #fff
+    padding-top: 30px
+    a
+        text-decoration: none
+.header__h2
+    font-weight: bold
+    font-size: 40px
+    line-height: 48px
+    color: #fff
+.header__nav
+    @extend %flex
+    width: 414px
+    a
+        font-weight: 600
+        color: #fff
+        text-decoration: none
+        &:hover
+            color: #ead0f5
+.header_button
+    background-color: transparent
+    border: 1px solid rgba(255, 255, 255, 0.295063)
+    box-sizing: border-box
+    @extend %font-sans
+    font-weight: bold
+    color: white
+    &:hover
+        background-color: #fff
+        color: #1e20ad
+        border: none
+.header-information
+    width: 370px
+    padding-top: 150px
+    h1
+        @extend %font-poppins
+        font-size: 72px
+        line-height: 72px
+        color: #FFFFFF
+    p
+        margin-top: 26px
+        margin-bottom: 34px
+        @extend %font-sans 
+        font-weight: 600
+        color: #FFFFFF
+.table 
+    position: absolute
+    left: 41.88%
+    top: 18%
+    z-index: 5
+.oval-under-table
+    position: absolute
+    top: 66%
+    right: 0%
+    z-index: 2
+.half-of-oval
+    position: absolute
+    right: 0
+    top: 7%
+.medium-oval
+    position: absolute
+    top: 24%
+    right: 10%
+    z-index: 2
+.little-oval
+    position: absolute
+    bottom: -7%
+    left: 38%
+.button_yellow
+    @extend %font-sans
+    font-weight: bold
+    color: #fff
+    background-color: #FFC300
+.social-menu
+    width: 112px
+    position: absolute
+    right: 9%
+    bottom: 6%
+    z-index: 6   
+    a
+        img
+            &:hover
+                transition: 1s
+                transform: scale(1.2) rotate(360deg)  
