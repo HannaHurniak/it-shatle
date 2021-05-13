@@ -33,13 +33,29 @@ body
     display: flex
     justify-content: space-between
     align-items: center
+%p-opacity
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    color: #FFFFFF
+    position: absolute
+    padding-top: 181px
+    padding-left: 32px
+    top: 0
+    width: 100%
+    height: 100%
+    background: #3200396e
+    opacity: 0
+    transition: opacity .5s
+    &:hover
+            opacity: 1
 article
     position: relative
     .independed-circle
         position: absolute
         z-index: 3
-        left: 31%
-        top: 74%
+        left: 30%
+        top: 40.8%
 header
     position: relative
     overflow: hidden
@@ -109,7 +125,7 @@ section
         margin-bottom: 34px
         @extend %font-sans 
         font-weight: 600
-        color: #FFFFFF
+        color: #FFFFFF        
 .table 
     position: absolute
     left: 41.88%
@@ -149,6 +165,7 @@ section
             &:hover
                 transition: 1s
                 transform: scale(1.2) rotate(360deg)  
+
 
 // SECTION CORPORIS-SUSCIPIT  
 .corporis-suscipit
@@ -208,6 +225,9 @@ section
     display: none
 .display
     display: block
+
+
+// SECTION SECTION-2
 .section-2
     height: 768px
     // padding-top: 61px
@@ -224,20 +244,26 @@ section
         mix-blend-mode: normal
         opacity: 0.5
         width: 570 / 1170 * 100%
-    div
-        &:nth-child(2)  
-            @extend %flex
-        &:nth-child(3)  
-            width: 516 / 1170 * 100%
-            @extend %flex
-            margin-bottom: 42px
-        &:nth-child(4)  
-            margin-bottom: 48px
-            position: relative
-            @extend %flex  
-        &:nth-child(5)  
-            @extend %flex
-            justify-content: center
+    .section-2__name
+        @extend %flex
+    .section-2__links
+        width: 516 / 1170 * 100%
+        @extend %flex
+        margin-bottom: 42px
+    // div
+    //     &:nth-child(2)  
+    //         @extend %flex
+    //     &:nth-child(3)  
+    //         width: 516 / 1170 * 100%
+    //         @extend %flex
+    //         margin-bottom: 42px
+    //     &:nth-child(4)  
+    //         margin-bottom: 48px
+    //         position: relative
+    //         @extend %flex  
+    //     &:nth-child(5)  
+    //         @extend %flex
+    //         justify-content: center
     a
         text-decoration: none
         @extend %font-sans
@@ -253,15 +279,19 @@ section
             background-color: #fff
             color: #1e20ad
             box-shadow: inset rgba(0,0,0,.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px
+.section-2__button
+    text-align: center
 .div-picture
-    position: relative
-    overflow: hidden
-    p
-        @extend %font-poppins
-        font-weight: bold
-        font-size: 24px
-        line-height: 32px
-        color: #FFFFFF
+    @extend %flex
+    margin-bottom: 48px
+    // position: relative
+    // overflow: hidden
+    div
+        width: 370 / 1170 * 100%
+        height: 272px
+        position: relative
+        overflow: hidden
+    .div-picture__div-opacity
         position: absolute
         padding-top: 181px
         padding-left: 32px
@@ -272,11 +302,37 @@ section
         opacity: 0
         transition: opacity .5s
         &:hover
+            opacity: 1  
+        p
+            @extend %font-poppins
+            font-weight: bold
+            font-size: 24px
+            line-height: 32px
+            color: #FFFFFF  
             opacity: 1
+        h6
+            @extend %font-sans
+            opacity: 0.5
+            color: #FFFFFF
+        
+    // div
+    //     &:nth-child(1)
+    //         overflow: hidden
+    //         position: relative
+    //     &:nth-child(2)  
+    //         overflow: hidden
+    //         position: relative
+    //         width: 370 / 1170 * 100%
+    //     &:nth-child(3)  
+    //         position: relative
+    //         width: 370 / 1170 * 100%
+    //         margin-bottom: 0px
 
+
+// SECTION FUGIAT-QUO
 .fugiat-quo
     padding-top: 71px
-    height: 768px
+    height: 694px
     p
         @extend %font-sans
         font-weight: 600
@@ -299,7 +355,8 @@ section
             justify-content: center
             align-items: center
             border-radius: 3px
-            padding-top: 35px
+            place-content: flex-end
+            // padding-top: 35px
             &:hover
                 box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678)
             img
@@ -315,8 +372,10 @@ section
                 mix-blend-mode: normal
                 opacity: 0.5
                 width: 322 / 370 * 100%
+                padding-left: 0
 
 
+// SECTION TEMPORIBUS
 .temporibus
     background-color: #3023AE
     position: relative
@@ -380,7 +439,9 @@ section
         &:hover
             background-color: #fff
             color: #1e20ad
-    
+
+
+// SECTION OFFICIS-DEBITIS
 .officis-debitis
     height: 697px
     h2
@@ -408,6 +469,10 @@ section
             border-radius: 3px
             width: 370 / 1170 * 100%
             height: 272px
+            &:hover
+                transition: 1s
+                transform: scale(1.1)
+                box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.322)
             img
                 margin-top: 32px
                 margin-left: 32px
@@ -432,6 +497,7 @@ section
         padding-top: 95px
 
 
+// SECTION OMNIS-VOLUPTAS
 .omnis-voluptas
     background-color: #FDF2FF
     height: 768px
@@ -451,9 +517,14 @@ section
         background-color:#C86DD7
         color: #fff
         @extend %font-sans
+        &:hover
+            background-color: #fff
+            color: #1e20ad
     img
         margin-top: 112px
 
+
+// FOOTER
 footer
     width: 1440px
     background-image: url("./assets/footer/background-image.png")

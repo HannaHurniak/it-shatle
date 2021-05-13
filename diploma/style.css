@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
 }
 
-.header, .header_button, .header-information p, .button_yellow, .corporis-suscipit h6, .corporis-suscipit p, .section-2 p, .section-2 a, .fugiat-quo p, .fugiat-quo .fugiat-quo__about-our-opportunities div p, .temporibus p, .temporibus button, .officis-debitis p, .officis-debitis .officis-debitis__review div p, .officis-debitis .officis-debitis__review div h6, .omnis-voluptas p, .omnis-voluptas button, footer p, footer .footer__bottom-part nav a, footer .footer__bottom-part p {
+.header, .header_button, .header-information p, .button_yellow, .corporis-suscipit h6, .corporis-suscipit p, .section-2 p, .section-2 a, .div-picture .div-picture__div-opacity h6, .fugiat-quo p, .fugiat-quo .fugiat-quo__about-our-opportunities div p, .temporibus p, .temporibus button, .officis-debitis p, .officis-debitis .officis-debitis__review div p, .officis-debitis .officis-debitis__review div h6, .omnis-voluptas p, .omnis-voluptas button, footer p, footer .footer__bottom-part nav a, footer .footer__bottom-part p {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
@@ -16,7 +16,7 @@ body {
   color: #333333;
 }
 
-h2, .header-information h1, .div-picture p, .fugiat-quo .fugiat-quo__about-our-opportunities div h4 {
+h2, .header-information h1, .div-picture .div-picture__div-opacity p, .fugiat-quo .fugiat-quo__about-our-opportunities div h4 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -41,7 +41,7 @@ button {
   border-radius: 24px;
 }
 
-.header, .header__nav, .section-2 div:nth-child(2), .section-2 div:nth-child(3), .section-2 div:nth-child(4), .section-2 div:nth-child(5), .omnis-voluptas .omnis-voluptas__info, footer .footer__bottom-part .footer__menu {
+.header, .header__nav, .section-2 .section-2__name, .section-2 .section-2__links, .div-picture, .omnis-voluptas .omnis-voluptas__info, footer .footer__bottom-part .footer__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,8 +60,8 @@ article {
 article .independed-circle {
   position: absolute;
   z-index: 3;
-  left: 31%;
-  top: 74%;
+  left: 30%;
+  top: 40.8%;
 }
 
 header {
@@ -317,20 +317,9 @@ section {
   width: 48.71795%;
 }
 
-.section-2 div:nth-child(3) {
+.section-2 .section-2__links {
   width: 44.10256%;
   margin-bottom: 42px;
-}
-
-.section-2 div:nth-child(4) {
-  margin-bottom: 48px;
-  position: relative;
-}
-
-.section-2 div:nth-child(5) {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .section-2 a {
@@ -356,16 +345,22 @@ section {
           box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
 }
 
+.section-2__button {
+  text-align: center;
+}
+
 .div-picture {
+  margin-bottom: 48px;
+}
+
+.div-picture div {
+  width: 31.62393%;
+  height: 272px;
   position: relative;
   overflow: hidden;
 }
 
-.div-picture p {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #FFFFFF;
+.div-picture .div-picture__div-opacity {
   position: absolute;
   padding-top: 181px;
   padding-left: 32px;
@@ -378,13 +373,26 @@ section {
   transition: opacity .5s;
 }
 
-.div-picture p:hover {
+.div-picture .div-picture__div-opacity:hover {
   opacity: 1;
+}
+
+.div-picture .div-picture__div-opacity p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.div-picture .div-picture__div-opacity h6 {
+  opacity: 0.5;
+  color: #FFFFFF;
 }
 
 .fugiat-quo {
   padding-top: 71px;
-  height: 768px;
+  height: 694px;
 }
 
 .fugiat-quo p {
@@ -428,7 +436,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 3px;
-  padding-top: 35px;
+  place-content: flex-end;
 }
 
 .fugiat-quo .fugiat-quo__about-our-opportunities div:hover {
@@ -451,6 +459,7 @@ section {
   mix-blend-mode: normal;
   opacity: 0.5;
   width: 87.02703%;
+  padding-left: 0;
 }
 
 .temporibus {
@@ -598,6 +607,15 @@ section {
   height: 272px;
 }
 
+.officis-debitis .officis-debitis__review div:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.322);
+          box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.322);
+}
+
 .officis-debitis .officis-debitis__review div img {
   margin-top: 32px;
   margin-left: 32px;
@@ -651,6 +669,11 @@ section {
 .omnis-voluptas button {
   background-color: #C86DD7;
   color: #fff;
+}
+
+.omnis-voluptas button:hover {
+  background-color: #fff;
+  color: #1e20ad;
 }
 
 .omnis-voluptas img {
