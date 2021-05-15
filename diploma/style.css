@@ -126,6 +126,10 @@ section {
   color: #ead0f5;
 }
 
+.header__nav a:active {
+  color: #ead0f5;
+}
+
 .header_button {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.295063);
@@ -330,6 +334,10 @@ section {
 }
 
 .section-2 a:first-child {
+  opacity: 1;
+}
+
+.section-2 a:hover {
   opacity: 1;
 }
 
@@ -774,6 +782,10 @@ footer .footer__bottom-part nav a {
 }
 
 footer .footer__bottom-part nav a:first-child {
+  opacity: 1;
+}
+
+footer .footer__bottom-part nav a:hover {
   opacity: 1;
 }
 
