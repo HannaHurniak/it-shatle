@@ -99,12 +99,3 @@ export default class TableView extends ViewComponent {
     this.root.append(this.scrollUpBtn);
   }
 }
-
-// txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
-    // txt += "<p>Browser Name: " + navigator.appName + "</p>";
-    // txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
-    txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
-    txt += "<p>Browser Language: " + navigator.language + "</p>";
-    txt += "<p>Browser Online: " + navigator.onLine + "</p>";
-    // txt += "<p>Platform: " + navigator.platform + "</p>";
-    txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
