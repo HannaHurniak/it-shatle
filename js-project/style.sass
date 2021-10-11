@@ -1,0 +1,97 @@
+*
+    margin: 0 auto
+    padding: 0 auto
+%button-template
+    width: 250px
+    height: 50px
+    border: 5px solid #d6f1f5b0
+    border-radius: 50px 
+button
+    @extend %button-template
+    background-color: #ffffffbd
+    font-size: 18px
+    font-weight: bold
+    color: #474a69
+    margin-top: 20px
+    &:hover
+        background-color: #fff
+        cursor: pointer
+.memberLogin
+    margin-top: 200px
+    font-size: 25px
+    color: #474a69
+.div
+    // background-color: #9b5f84a6
+    border: 1px solid black
+    background-image: url(./assets/b-image.png)
+    background-repeat: no-repeat
+    background-size: cover
+    width: 600px
+    height: 800px
+    display: flex
+    flex-direction: column
+    // justify-content: center
+    align-items: center
+    font-size: 25px
+    color: #474a69
+.inputEmail
+    margin-top: 15px
+    padding-left: 20px
+    @extend %button-template
+    // margin-top: 100px
+.inputPass
+    margin-top: 20px
+    padding-left: 20px
+    @extend %button-template
+.buttonLogin
+    background-color: #68b3ac
+    color: #34364e
+    &:hover
+        background-color: #828494
+        cursor: pointer
+.notMember
+    margin-top: 50px
+    font-size: 18px
+.buttonCreateAccount
+    width: 200px
+    margin-top: 5px
+.errorDiv
+    margin-top: 50px
+    font-size: 30px
+    font-weight: bold
+    color:  #34364e
+// .img
+//     width: 100px
+
+.divWeb
+    width: 1200px
+    height: 100px
+    background-color: #ac2020
+
+.menu
+    width: 100%
+    height: 100px
+    background-color: #3a5a85
+    display: flex
+    justify-content: center
+.menu-list
+    width: 600px
+    display: flex
+    justify-content: space-between
+    align-items: center
+.link
+    font-size: 26px
+    color: #fff
+    text-decoration: none
+    cursor: pointer
+    &:hover
+        color: #e4d7e4
+        text-decoration: underline
+p
+    margin-bottom: 15px
+.divInfo
+    margin-top: 250px
+    font-size: 30px
+    font-weight: bold
+    color: #34364e
+    width: 800px
